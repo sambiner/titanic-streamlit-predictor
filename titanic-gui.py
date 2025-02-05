@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+data = pd.read_csv("titanic_test.csv")
 with open(
     "titanic_model.pkl",
     "rb",
