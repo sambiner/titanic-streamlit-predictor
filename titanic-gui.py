@@ -2,9 +2,8 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-data = pd.read_csv("titanic_test.csv")
 with open(
-    "C:/Users/sambi/Documents/BSAN 6198 - ML Pipeline/Titanic Streamlit GUI/titanic_model.pkl",
+    "titanic_model.pkl",
     "rb",
 ) as file:
     model = pickle.load(file)
